@@ -1,0 +1,15 @@
+[package]
+name = "f3-rust-hal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7.4"
+cortex-m-rt = { version = "0.7.1", features = ["device"] }
+panic-halt = "0.2.0"
+stm32f3xx-hal = { version = "0.9.0", features = ["ld", "rt", "stm32f303xc"] }
+
+[[bin]]
+name = "f3-rust-hal"
+test = false
+bench = false
